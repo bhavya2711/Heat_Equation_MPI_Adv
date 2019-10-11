@@ -1,0 +1,24 @@
+[mba-c7:04043] *** Process received signal ***
+[mba-c7:04043] Signal: Segmentation fault (11)
+[mba-c7:04043] Signal code:  (128)
+[mba-c7:04043] Failing at address: (nil)
+[mba-c7:04043] [ 0] /lib64/libpthread.so.0(+0xf5d0)[0x2af695d525d0]
+[mba-c7:04043] [ 1] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/libopen-pal.so.13(opal_memory_ptmalloc2_int_malloc+0x19a)[0x2af69661902a]
+[mba-c7:04043] [ 2] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/libopen-pal.so.13(opal_memory_ptmalloc2_malloc+0x99)[0x2af696619d79]
+[mba-c7:04043] [ 3] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_rcache_vma.so(mca_rcache_vma_tree_insert+0x3c8)[0x2af69a708268]
+[mba-c7:04043] [ 4] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_rcache_vma.so(mca_rcache_vma_insert+0x22)[0x2af69a707242]
+[mba-c7:04043] [ 5] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_mpool_grdma.so(mca_mpool_grdma_register+0x2df)[0x2af69a90d1bf]
+[mba-c7:04043] [ 6] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_btl_openib.so(mca_btl_openib_prepare_dst+0x178)[0x2af69b124058]
+[mba-c7:04043] [ 7] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_pml_ob1.so(mca_pml_ob1_recv_request_get_frag+0x5b)[0x2af69cf0731b]
+[mba-c7:04043] [ 8] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_pml_ob1.so(mca_pml_ob1_recv_request_progress_rget+0x279)[0x2af69cf07a99]
+[mba-c7:04043] [ 9] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_pml_ob1.so(mca_pml_ob1_recv_frag_callback_rget+0x111)[0x2af69cf05ea1]
+[mba-c7:04043] [10] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_btl_openib.so(+0x11356)[0x2af69b12c356]
+[mba-c7:04043] [11] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_btl_openib.so(+0x120ff)[0x2af69b12d0ff]
+[mba-c7:04043] [12] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_btl_openib.so(+0x12aad)[0x2af69b12daad]
+[mba-c7:04043] [13] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/libopen-pal.so.13(opal_progress+0x4a)[0x2af6965cd26a]
+[mba-c7:04043] [14] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/openmpi/mca_pml_ob1.so(mca_pml_ob1_recv+0x225)[0x2af69cf02475]
+[mba-c7:04043] [15] /apps/pkg/openmpi/1.10.0/rhel7_u5/gnu/lib/libmpi.so.12(MPI_Recv+0x12f)[0x2af6952b4ecf]
+[mba-c7:04043] [16] ./mpi_heat[0x4090b6]
+[mba-c7:04043] [17] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2af695f813d5]
+[mba-c7:04043] [18] ./mpi_heat[0x4095f7]
+[mba-c7:04043] *** End of error message ***
